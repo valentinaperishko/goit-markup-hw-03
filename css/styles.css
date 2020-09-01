@@ -102,6 +102,7 @@ ul {
   border-radius: 4px;
   padding: 10px 36px;
   min-width: 200px;
+  margin-bottom: 200px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -134,10 +135,11 @@ ul {
 }
 /* Features */
 .feature-list .title {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -149,6 +151,7 @@ ul {
 }
 /* Sections titles */
 .section .section-title {
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -156,9 +159,17 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* Work list */
+.work-list {
+  margin-bottom: 94px;
+}
 
 /* Team section */
+.img-mate {
+  margin-bottom: 30px;
+}
 .section .team-mate {
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
