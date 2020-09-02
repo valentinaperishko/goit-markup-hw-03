@@ -60,14 +60,14 @@ span {
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
-  height: 80px;
   align-items: center;
   margin-left: auto;
 }
 /* Site nav */
 .site-nav {
   display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -92,8 +92,9 @@ span {
   letter-spacing: 0.02em;
 }
 /* Contact */
-.contact .item {
+.contact {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 .contact .item:not(:first-child) {
