@@ -15,8 +15,6 @@ body {
 }
 /* Logo */
 header .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -57,13 +55,25 @@ ul {
 .page-header {
   background-color: #ccc;
 }
-/* Site nav */
-.site-nav,
-.contact {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.main-nav .auth-nav,
+.contact-item {
+  display: flex;
+  align-items: center;
 }
+/* Site nav */
+.logo-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+
   color: var(--title-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -80,6 +90,13 @@ ul {
   color: var(--accent-color);
   letter-spacing: 0.02em;
 }
+.contact {
+  display: flex;
+}
+.contact .item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .contact .contact-item {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -107,7 +124,6 @@ ul {
 }
 .hero {
   padding-top: 200px;
-
   text-align: center;
 }
 /* Button */
@@ -149,7 +165,6 @@ ul {
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 94px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
