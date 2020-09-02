@@ -50,6 +50,8 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 .page-header {
@@ -113,7 +115,6 @@ ul {
   border-radius: 4px;
   padding: 10px 36px;
   min-width: 200px;
-  margin-bottom: 200px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -148,6 +149,7 @@ ul {
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 94px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
