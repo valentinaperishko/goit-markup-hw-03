@@ -13,6 +13,11 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 /* Logo */
 header .logo {
   color: var(--title-text-color);
@@ -26,6 +31,8 @@ header .logo {
 footer .logo {
   margin-top: 0;
   margin-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--primary-white-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -38,16 +45,12 @@ span {
   color: var(--accent-color);
 }
 /* Cтили для index.html */
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
+
 /* Page header */
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid tomato;
@@ -56,23 +59,22 @@ ul {
   background-color: #ccc;
 }
 .main-nav .auth-nav,
-.contact-item {
+.main-nav .contact {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 /* Site nav */
-.logo-nav {
-  display: flex;
-}
 .site-nav {
   display: flex;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-
 .site-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--title-text-color);
   font-family: inherit;
@@ -90,13 +92,17 @@ ul {
   color: var(--accent-color);
   letter-spacing: 0.02em;
 }
-.contact {
+/* Contact */
+.contact .item {
   display: flex;
+  margin-left: auto;
 }
 .contact .item:not(:first-child) {
   margin-left: 50px;
 }
-
+.contact .item:first-child {
+  margin-left: 331px;
+}
 .contact .contact-item {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -105,7 +111,6 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
 .contact .contact-item:hover,
 .contact .contact-item:focus {
   color: var(--accent-color);
@@ -115,7 +120,6 @@ ul {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--primary-white-color);
-  background-color: tomato;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -124,6 +128,8 @@ ul {
 }
 .hero {
   padding-top: 200px;
+  padding-bottom: 280px;
+  margin-bottom: 30px;
   text-align: center;
 }
 /* Button */
@@ -162,6 +168,13 @@ ul {
   overflow: hidden;
 }
 /* Features */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-list .item {
+  width: 270px;
+}
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -249,8 +262,13 @@ ul {
 /* Стили для portfolio.html */
 .portfolio .portfolio-title {
   color: var(--title-text-color);
-  width: 0;
-  height: 0;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 /* Button section */
@@ -267,6 +285,14 @@ ul {
 .page-nav .button-nav:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+/* Project */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  width: 370px;
 }
 .project-extra-text {
   color: var(--primary-white-color);
