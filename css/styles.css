@@ -58,7 +58,7 @@ span {
   background-color: #ccc;
 }
 
-.container.main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -174,8 +174,13 @@ span {
   padding-bottom: 94px;
 }
 .feature-list .item {
+  margin-right: 30px;
   width: 270px;
 }
+.feature-list .item:last-child {
+  margin-right: 0;
+}
+
 .feature-list .title {
   margin-top: 0;
   margin-bottom: 10px;
