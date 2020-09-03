@@ -230,6 +230,7 @@ span {
 .work-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .work-item {
   width: 370px;
@@ -246,6 +247,7 @@ span {
 }
 .our-team {
   display: flex;
+  flex-wrap: wrap;
 }
 .our-team .item:not(:last-child) {
   margin-right: 30px;
