@@ -141,7 +141,6 @@ span {
 .hero {
   padding-top: 200px;
   padding-bottom: 280px;
-  margin-bottom: 30px;
   text-align: center;
 }
 /* Button */
@@ -180,10 +179,13 @@ span {
   overflow: hidden;
 }
 /* Features */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .feature-list .item {
   margin-right: 30px;
@@ -224,7 +226,6 @@ span {
 /* Work list */
 .work-list {
   display: flex;
-  padding-bottom: 94px;
   justify-content: center;
 }
 .work-item {
@@ -237,6 +238,11 @@ span {
 }
 
 /* Team section */
+.our-team {
+  display: flex;
+}
+.our-team .item {
+}
 .img-mate {
   margin-bottom: 30px;
 }
