@@ -4,11 +4,11 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-button-color: #f5f4fa;
-  --background-color: #87ceeb;
+  --background-color: #f5f4fa;
   --address-color: rgba(255, 255, 255, 0.6);
+  --footer-color: #2f303a;
 }
 body {
-  background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -39,7 +39,6 @@ header .logo {
   text-decoration: none;
 }
 footer .logo {
-  margin-top: 0;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
@@ -61,11 +60,11 @@ span {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
-.page-header {
+/* .page-header {
   background-color: #ccc;
-}
+} */
 
 .main-nav {
   display: flex;
@@ -142,6 +141,7 @@ span {
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
+  background-color: var(--primary-text-color);
 }
 /* Button */
 .button {
@@ -238,12 +238,17 @@ span {
 }
 
 /* Team section */
+.section.team {
+  background-color: var(--background-color);
+}
 .our-team {
   display: flex;
 }
-.our-team .item {
+.our-team .item:not(:last-child) {
+  margin-right: 30px;
 }
 .img-mate {
+  width: 270px;
   margin-bottom: 30px;
 }
 .section .team-mate {
@@ -254,6 +259,7 @@ span {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .text-mate {
   margin-top: 0;
@@ -262,12 +268,18 @@ span {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 /* Projects */
 .project .project-title {
   color: var(--title-text-color);
 }
 /* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-color);
+}
 
 .address {
   margin-top: 0;
@@ -294,6 +306,10 @@ span {
 }
 
 /* Стили для portfolio.html */
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
 .portfolio .portfolio-title {
   color: var(--title-text-color);
   position: absolute !important;
@@ -309,7 +325,7 @@ span {
 .button-nav {
   border: 1px solid var(--secondary-button-color);
   border-radius: 4px;
-  padding: 6 px 22px;
+  padding: 6px 22px;
   background-color: var(--secondary-button-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -318,9 +334,13 @@ span {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-.page-nav .item {
+.page-nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.page-nav .item:not(:last-child) {
+  margin-right: 8px;
 }
 .page-nav .button-nav:hover,
 .page-nav .button-nav:focus {
@@ -343,13 +363,13 @@ span {
 .project-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.project-extra-text {
+/* .project-extra-text {
   color: var(--primary-white-color);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-}
+} */
 .project-link {
   text-decoration: none;
 }
