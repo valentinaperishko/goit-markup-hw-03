@@ -137,14 +137,14 @@ span {
   text-transform: uppercase;
 }
 .hero {
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto;
   text-align: center;
   background-color: #2f303a;
 }
 .hero-section {
-  /* width: 700px; */
-  text-align: center;
+  width: 720px;
 }
 /* Button */
 .button {
