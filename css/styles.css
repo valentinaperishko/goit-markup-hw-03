@@ -293,15 +293,20 @@ span {
   background-color: var(--footer-color);
 }
 
-.address {
+address {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
-  margin-bottom: 9px;
   color: var(--primary-white-color);
 }
 .address-link {
+  margin-top: 9px;
   margin-bottom: 9px;
   color: var(--address-color);
   text-decoration: none;
+}
+.address-link:last-child {
+  margin-top: 0;
 }
 .address,
 .address-link {
