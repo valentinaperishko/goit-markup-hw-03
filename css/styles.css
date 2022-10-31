@@ -62,6 +62,7 @@ img {
 /* Cтилі хедера*/
 
 .page-header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--primary-white-color);
 }
 
@@ -214,8 +215,15 @@ img {
 
 .feature-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+}
+
+.feature-list-item {
+  width: 270px;
+}
+
+.feature-list-item + .feature-list-item {
+  margin-left: 30px;
 }
 
 .feature-list-title {
@@ -355,6 +363,10 @@ direction:active {
 
 /* Секція "Наші проєкти"*/
 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .portfolio-btn {
   display: inline-block;
   border: 1px solid transparent;
