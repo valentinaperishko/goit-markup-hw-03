@@ -412,14 +412,14 @@ direction:active {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-right: -30px;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-right: calc(-1 * var(--card-set-gap));
 }
 
 .project-list-item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: 30px;
-  margin-right: 30px;
+  margin-top: var(--card-set-gap);
+  margin-right: var(--card-set-gap);
 }
 
 .project-info {
