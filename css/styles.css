@@ -244,6 +244,9 @@ img {
 
 /* Секція "Чим ми займаємось"*/
 
+.wedo-section {
+  padding-bottom: 94px;
+}
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
